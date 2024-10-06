@@ -18,8 +18,7 @@ const App = () => {
 
   const showFn = () => {
     setShowForm(prev => !prev);
-    setOpenEdit(false);
-    setShowForm(true);
+     
     resetForm(); // Reset the form when adding a new user
   };
 
@@ -161,7 +160,7 @@ const App = () => {
                   <td>{item.phone}</td>
                   <td>{item.username}</td>
                   <td>
-                    <button className='table-btn' onClick={() => EditHandler(index)}>Edit</button>
+                    <button className='table-btn' onClick={() => EditHandler(index)}>Edit</button>&nbsp;
                     <button className='table-btn' onClick={() => DeleteHandler(index)}>Delete</button>
                   </td>
                 </tr>

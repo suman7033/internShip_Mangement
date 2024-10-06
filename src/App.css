@@ -10,6 +10,7 @@
   font-weight: bold;
   color: chartreuse;
   cursor: pointer;
+  background-color: #6b5c5c;
   margin-bottom: 10px;
 }
 .btn{
@@ -31,12 +32,13 @@
    flex-direction: column;
    width: 500px;
    height: 580px;
+   text-align: center;
    align-items: center;
-   text-align: right;
    border-radius: 10px;
    background-color: rgb(201, 191, 191);
 }
 label{
+  display: block;
   font-weight: bold;
   font-size: 20px;
 }
@@ -46,38 +48,68 @@ input{
   font-size: 1.2em;
   margin-bottom: 5px;
   box-sizing: border-box;
+   
 }
 .submit-btn{
   width: 300px;
   height: 40px;
   font-size: 20px;
-  color: rgb(14, 240, 240);
+  color: rgb(44, 240, 14);
   border-radius: 5px;
   cursor: pointer;
+  background-color: rgb(108, 126, 126);
 }
 table{
+  display: flexbox;
+  flex-wrap: wrap;
   margin-top: 10px;
   border: 2px solid rgb(12, 190, 210);
   width: 100%;
   border-collapse: collapse;
 
 }
-table th{
+.table-div{
+  width: 100%;
+  overflow-x: auto;
+}
+tr:nth-child(even){background-color: #3a31db}
+
+th{
   border: 2px solid rgb(7, 228, 244);
 }
-table td{
+td{
+  height: 60px;
   text-align: center;
-  color: chartreuse;
+  color: rgb(169, 225, 114);
   border: 2px solid rgb(13, 184, 236);
+  background-color: #4f5f5e;
 }
 .table-btn{
   width: 75px;
   height: 30px;
-  background-color: rgb(223, 155, 168);
   font-weight: bold;
-  color: rgb(137, 137, 230);
+  color: rgb(13, 13, 222);
   border-radius: 5px;
+  background-color: #d7acac;
 }
 h1{
   text-align: center;
+}
+@media (max-width: 760px){
+  h1{
+    font-size: 18px;
+    text-align: center;
+  }
+  .form{
+    width: 320px;
+  }
+  .submit-btn{
+    width: 150px;
+  }
+  
+
+
+
+
+ 
 }
